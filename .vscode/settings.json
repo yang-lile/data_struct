@@ -1,0 +1,7 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, TabWidth: 2, IndentWidth: 2,}",
+    "editor.tabSize": 2,
+    "files.associations": {
+        "array": "cpp"
+    }
+}
