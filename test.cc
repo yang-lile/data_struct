@@ -10,8 +10,6 @@ int main(int argc, char const *argv[]) {
   cout << s.Top() << endl;
 
   s.Pop();
-
   cout << s.IsNotEmpty() << endl;
-
   return 0;
 }
