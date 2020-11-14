@@ -1,6 +1,19 @@
-// 接口类，提供判断空的接口
-class EmtryInterface {
+// 总的基类，保证了以下的类都是同源的，都是用来组合的组件
+class BaseInterface {
  protected:
+  // 带上析构函数是编码的健壮
+  // 不使用接口指针跨级访问是编程规范
+  virtual ~BaseInterface() {}
+
+  // 提供一个打日志的方法
+  void PrintLog() const;
+};
+
+// 接口类，提供判断空的接口
+class EmptyInterface : virtual BaseInterface {
+ protected:
+  virtual ~EmptyInterface() {}
+
   // 判断为空
   virtual bool IsEmpty() = 0;
 
@@ -9,26 +22,32 @@ class EmtryInterface {
 };
 
 // 接口类，提供长度操作的接口
-class LengthInterface {
+class LengthInterface : virtual BaseInterface {
+ protected:
+  virtual ~LengthInterface() {}
+
+  // 获取长度
+  virtual int GetLength() = 0;
+
  private:
   // 修改长度
   virtual void SetLength(int length) = 0;
-
- protected:
-  // 获取长度
-  virtual int GetLength() = 0;
 };
 
 // 接口类，提供打印操作的接口
-class DisplayInterface {
+class DisplayInterface : virtual BaseInterface {
  protected:
+  virtual ~DisplayInterface() {}
+
   // 打印
   virtual void Display() = 0;
 };
 
 // 接口类，提供清空数据结构的操作
-class CleanInterface {
+class CleanInterface : virtual BaseInterface {
  protected:
+  virtual ~CleanInterface() {}
+
   // 清空数据结构
   virtual void Clean() = 0;
 };

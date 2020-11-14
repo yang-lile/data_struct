@@ -11,5 +11,6 @@ int main(int argc, char const *argv[]) {
 
   s.Pop();
   cout << s.IsNotEmpty() << endl;
+  s.IsEmpty();
   return 0;
 }

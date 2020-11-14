@@ -4,11 +4,12 @@
 // 组合了判空、长度、打印、清空
 // 再定义了基于线性表的增删改查
 template <typename T>
-class ListInterface : public EmtryInterface,
+class ListInterface : public EmptyInterface,
                       public LengthInterface,
                       public DisplayInterface,
                       public CleanInterface {
  protected:
+  ~ListInterface() = 0;
   // 在位序 index 处插入元素 elem ，其他数据向后移动
   virtual void InsertElem(int index, T elem) = 0;
 

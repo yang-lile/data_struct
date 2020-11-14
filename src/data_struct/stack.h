@@ -2,10 +2,6 @@
 
 template <typename T>
 class Stack : public StackInterface<T> {
- private:
-  T* array_;
-  int top_;
-
  public:
   Stack() {
     this->array_ = new T[100];
@@ -25,4 +21,8 @@ class Stack : public StackInterface<T> {
   T Top() { return this->array_[this->top_ - 1]; }
 
   ~Stack() { delete this->array_; }
+
+ private:
+  T* array_;
+  int top_;
 };
