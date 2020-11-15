@@ -1,3 +1,5 @@
+#ifdef DEBUG
+
 #include "../interface/list_interface.h"
 
 // 模板接口类继承模板接口类
@@ -20,3 +22,5 @@ class SeqList : public ListInterface<T> {
 
  public:
 };
+
+#endif
