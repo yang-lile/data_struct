@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/Users/lilua/Desktop/�γ����/ctbu_DS_module/src/CMakeLists.txt
+  base_interface.cc
+C:\Users\lilua\Desktop\课程设计\ctbu_DS_module\src\..\lib\interface\base_interface.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  stack_interface.cc
+C:\Users\lilua\Desktop\课程设计\ctbu_DS_module\src\..\lib\interface\stack_interface.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\lilua\Desktop\课程设计\ctbu_DS_module\lib\interface\base_interface.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  dir_lib_srcs.vcxproj -> C:\Users\lilua\Desktop\课程设计\ctbu_DS_module\build\src\Release\dir_lib_srcs.lib

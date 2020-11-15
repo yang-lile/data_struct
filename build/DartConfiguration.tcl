@@ -14,7 +14,7 @@ CostDataFile:
 Site: DESKTOP-M6IO6D0
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-mingw32-make
+BuildName: Win32-MSBuild
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,7 +27,7 @@ NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
 ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/lilua/Desktop/课程设计/ctbu_DS_module"
-MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+MakeCommand: "C:\Program Files\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: C:/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe
-CompilerVersion: 8.1.0
+Compiler: D:/App/vs2019/VC/Tools/MSVC/14.28.29333/bin/Hostx64/x64/cl.exe
+CompilerVersion: 19.28.29333.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -96,7 +96,7 @@ TimeOut: 1500
 # so would cause the system load to exceed this value.
 TestLoad: 
 
-UseLaunchers: 
+UseLaunchers: 0
 CurlOptions: 
 # warning, if you add new options here that have to do with submit,
 # you have to update cmCTestSubmitCommand.cxx

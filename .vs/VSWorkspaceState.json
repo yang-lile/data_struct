@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\data_struct",
-    "\\src\\interface"
+    "\\src"
   ],
-  "SelectedNode": "\\test.cc",
+  "SelectedNode": "\\lib",
   "PreviewInSolutionExplorer": false
 }
