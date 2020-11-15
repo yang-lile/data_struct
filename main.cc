@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "stack.h"
+#include "include/data_struct/stack.h"
 
 using namespace std;
 

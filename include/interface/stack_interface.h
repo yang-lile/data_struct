@@ -3,11 +3,12 @@
 
 // 定义成模板类便于代码复用
 template <typename T>
-class StackInterface : public EmptyInterface, public CleanInterface {
+class StackInterface : virtual EmptyInterface, virtual CleanInterface {
   // 栈应该有的操作
  protected:
-  StackInterface();
-
+#ifdef DEBUG
+  StackInterface() { this->PrintLog(); }
+#endif
   virtual ~StackInterface() {}
 
   // 入栈

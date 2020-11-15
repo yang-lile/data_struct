@@ -1,4 +1,6 @@
-#include "base_interface.h"
+#ifdef DEBUG
+
+#include "../include/interface/base_interface.h"
 
 #include <iostream>
 
@@ -20,3 +22,5 @@ DisplayInterface::DisplayInterface() { PrintLog(); }
 
 // 初始化时打log
 CleanInterface::CleanInterface() { PrintLog(); }
+
+#endif

@@ -1,4 +1,4 @@
-#include "interface/stack_interface.h"
+#include "../interface/stack_interface.h"
 
 template <typename T>
 class Stack : public StackInterface<T> {

@@ -7,8 +7,11 @@ class BaseInterface {
   // 不使用接口指针跨级访问是编程规范
   virtual ~BaseInterface() {}
 
+ private:
+#ifdef DEBUG
   // 提供一个打日志的方法
   void PrintLog() const;
+#endif
 };
 
 // 接口类，提供判断空的接口
